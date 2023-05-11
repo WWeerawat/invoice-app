@@ -6,10 +6,5 @@
             "use": "@vercel/node"
         }
     ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "src/schema.gql"
-        }
-    ]
+     "rewrites": [{ "source": "/(.*)", "destination": "src/main.ts" }]
 }
